@@ -8,9 +8,11 @@
     --primary-color: #008B8B;
     --secondary-color: #20B2AA;
     --accent-color: #00CED1;
-    --text-color: #333;
+    --text-color: #1a1a1a;
     --light-bg: #E0F7F6;
     --white: #FFFFFF;
+    --dark-gray: #333333;
+    --medium-gray: #666666;
 }
 
 body {
@@ -33,7 +35,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid var(--dark-gray);
 }
 
 .navbar .container {
@@ -45,6 +48,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .nav-links {
@@ -56,11 +60,19 @@ body {
 .nav-links a {
     color: var(--white);
     text-decoration: none;
-    transition: opacity 0.3s;
+    transition: all 0.3s;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-links a:hover {
-    opacity: 0.8;
+    border-bottom: 2px solid var(--white);
+    text-decoration: underline;
+}
+
+.nav-links a:focus {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
 }
 
 /* Hero Section */
@@ -73,39 +85,51 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 5px solid var(--dark-gray);
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    opacity: 0.95;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button {
     display: inline-block;
     background-color: var(--accent-color);
-    color: var(--white);
+    color: var(--dark-gray);
     padding: 0.8rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid var(--dark-gray);
+    transition: all 0.3s;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 206, 209, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+}
+
+.cta-button:focus {
+    outline: 3px solid var(--dark-gray);
+    outline-offset: 4px;
 }
 
 /* Tutorials Section */
 .tutorials {
     padding: 4rem 2rem;
     background-color: var(--light-bg);
+    border-bottom: 5px solid var(--primary-color);
 }
 
 .tutorials h2 {
@@ -113,6 +137,8 @@ body {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .skill-selector {
@@ -125,12 +151,13 @@ body {
 
 .skill-btn {
     padding: 0.6rem 1.5rem;
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     background-color: transparent;
     color: var(--primary-color);
     border-radius: 25px;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: 600;
     transition: all 0.3s;
 }
 
@@ -138,6 +165,12 @@ body {
 .skill-btn:hover {
     background-color: var(--primary-color);
     color: var(--white);
+    text-decoration: underline;
+}
+
+.skill-btn:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
 }
 
 .tutorials-grid {
@@ -150,14 +183,21 @@ body {
     background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--primary-color);
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.3s;
 }
 
 .tutorial-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    border-width: 4px;
+}
+
+.tutorial-card:focus-within {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
 }
 
 .tutorial-card-header {
@@ -165,6 +205,7 @@ body {
     padding: 1.5rem;
     text-align: center;
     font-size: 2rem;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .tutorial-card-body {
@@ -174,6 +215,8 @@ body {
 .tutorial-card h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .tutorial-card .skill-level {
@@ -183,26 +226,46 @@ body {
     font-size: 0.85rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    border: 2px solid #333;
 }
 
 .skill-level.beginner {
-    background-color: #E0F7F4;
-    color: #00695C;
+    background-color: #FFFFFF;
+    color: #003D39;
+    border: 2px solid #003D39;
+}
+
+.skill-level.beginner::before {
+    content: "[BEGINNER] ";
+    font-weight: bold;
 }
 
 .skill-level.intermediate {
-    background-color: #E0F7F6;
+    background-color: #FFFFFF;
     color: #004D40;
+    border: 2px dashed #004D40;
+}
+
+.skill-level.intermediate::before {
+    content: "[INTERMEDIATE] ";
+    font-weight: bold;
 }
 
 .skill-level.advanced {
-    background-color: #B2DFDB;
+    background-color: #FFFFFF;
     color: #00413E;
+    border: 2px dotted #00413E;
+}
+
+.skill-level.advanced::before {
+    content: "[ADVANCED] ";
+    font-weight: bold;
 }
 
 .tutorial-card p {
-    color: #666;
+    color: var(--dark-gray);
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* Modal */
@@ -214,7 +277,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
@@ -226,24 +289,38 @@ body {
     max-width: 800px;
     max-height: 80vh;
     overflow-y: auto;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 4px solid var(--primary-color);
 }
 
 .close {
-    color: #aaa;
+    color: var(--dark-gray);
     float: right;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 
 .close:hover {
-    color: var(--primary-color);
+    background-color: var(--light-bg);
+    border: 2px solid var(--primary-color);
+}
+
+.close:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
 }
 
 .tutorial-detail h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
 }
 
 .tutorial-detail .skill-level {
@@ -252,9 +329,12 @@ body {
 }
 
 .tutorial-detail h3 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+    font-weight: bold;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 0.5rem;
 }
 
 .tutorial-detail ol,
@@ -265,34 +345,43 @@ body {
 
 .tutorial-detail li {
     margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
 }
 
 /* Challenge Section */
 .challenge {
     padding: 4rem 2rem;
     background: linear-gradient(135deg, var(--accent-color) 0%, #48D1CC 100%);
-    color: var(--white);
+    color: var(--dark-gray);
+    border-bottom: 5px solid var(--dark-gray);
 }
 
 .challenge h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--dark-gray);
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .challenge > .container > p {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    opacity: 0.95;
+    color: var(--dark-gray);
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .video-container {
     margin-bottom: 2rem;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 4px solid var(--dark-gray);
 }
 
 .video-container iframe {
@@ -301,16 +390,19 @@ body {
 }
 
 .challenge-info {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    border: 3px solid var(--dark-gray);
 }
 
 .challenge-info h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--dark-gray);
+    font-weight: bold;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
 }
 
 .challenge-info ul {
@@ -323,16 +415,20 @@ body {
     font-size: 1.1rem;
     display: flex;
     align-items: center;
+    color: var(--dark-gray);
+    font-weight: 500;
 }
 
 .challenge-info li:before {
     margin-right: 0.5rem;
+    font-weight: bold;
 }
 
 /* About Section */
 .about {
     padding: 4rem 2rem;
     background-color: var(--white);
+    border-bottom: 5px solid var(--primary-color);
 }
 
 .about h2 {
@@ -340,12 +436,14 @@ body {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .about p {
     text-align: center;
     font-size: 1.1rem;
-    color: #666;
+    color: var(--dark-gray);
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -356,18 +454,22 @@ body {
     padding: 4rem 2rem;
     background-color: var(--light-bg);
     text-align: center;
+    border-bottom: 5px solid var(--primary-color);
 }
 
 .contact h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .contact p {
     font-size: 1.1rem;
-    color: #666;
+    color: var(--dark-gray);
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .contact-link {
@@ -377,11 +479,20 @@ body {
     padding: 0.8rem 2rem;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    border: 2px solid var(--dark-gray);
+    font-weight: bold;
+    transition: all 0.3s;
 }
 
 .contact-link:hover {
     background-color: var(--accent-color);
+    color: var(--dark-gray);
+    text-decoration: underline;
+}
+
+.contact-link:focus {
+    outline: 3px solid var(--dark-gray);
+    outline-offset: 4px;
 }
 
 /* Footer */
@@ -390,6 +501,8 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 2rem;
+    border-top: 3px solid var(--dark-gray);
+    font-weight: 500;
 }
 
 /* Responsive */
@@ -439,5 +552,29 @@ footer {
 
     .challenge-info li {
         font-size: 1rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+    body {
+        color: #000000;
+    }
+    
+    .skill-btn {
+        border-width: 4px;
+    }
+    
+    .tutorial-card {
+        border-width: 4px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
