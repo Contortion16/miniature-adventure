@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary-color: #8B4789;
-    --secondary-color: #D4A5D4;
-    --accent-color: #FF6B9D;
+    --primary-color: #008B8B;
+    --secondary-color: #20B2AA;
+    --accent-color: #00CED1;
     --text-color: #333;
-    --light-bg: #F9F7F4;
+    --light-bg: #E0F7F6;
     --white: #FFFFFF;
 }
 
@@ -99,7 +99,7 @@ body {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255, 107, 157, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 206, 209, 0.4);
 }
 
 /* Tutorials Section */
@@ -186,18 +186,18 @@ body {
 }
 
 .skill-level.beginner {
-    background-color: #E8F5E9;
-    color: #2E7D32;
+    background-color: #E0F7F4;
+    color: #00695C;
 }
 
 .skill-level.intermediate {
-    background-color: #FFF3E0;
-    color: #E65100;
+    background-color: #E0F7F6;
+    color: #004D40;
 }
 
 .skill-level.advanced {
-    background-color: #F3E5F5;
-    color: #6A1B9A;
+    background-color: #B2DFDB;
+    color: #00413E;
 }
 
 .tutorial-card p {
@@ -270,7 +270,7 @@ body {
 /* Challenge Section */
 .challenge {
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, var(--accent-color) 0%, #FF8FB3 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, #48D1CC 100%);
     color: var(--white);
 }
 
