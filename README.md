@@ -1,18 +1,57 @@
-# Miniature Adventure
+# Miniature Adventure - Sewing Education Website
 
-Welcome to Miniature Adventure!
+Welcome to Miniature Adventure - Your guide to learning how to sew!
 
 ## Description
-This is a miniature adventure project.
+Miniature Adventure is an interactive website dedicated to teaching people the fundamentals and advanced techniques of sewing. Whether you're a complete beginner or looking to refine your skills, our step-by-step tutorials and guides will help you become a confident sewist.
 
 ## Getting Started
-Add details about how to get started with this project here.
+
+### Prerequisites
+- A web browser (Chrome, Firefox, Safari, or Edge)
+- No prior sewing knowledge required!
+
+### Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Contortion16/miniature-adventure.git
+   cd miniature-adventure
+   ```
+
+2. Open `index.html` in your browser or serve locally:
+   ```bash
+   python -m http.server 8000
+   ```
+
+3. Visit `http://localhost:8000` in your browser
 
 ## Usage
-Describe how to use this project.
+Browse through our tutorials organized by skill level:
+- **Beginner**: Basic stitches, threading a needle, using a sewing machine
+- **Intermediate**: Garment construction, pattern reading, fabric selection
+- **Advanced**: Complex techniques, custom patterns, textile art
+
+## Tutorials Included
+- Hand Sewing Basics
+- Machine Sewing Fundamentals
+- Simple Projects (Pillows, Tote Bags, Coasters)
+- Garment Construction
+- Fabric Care and Selection
 
 ## Contributing
-Contributions are welcome! Feel free to open issues and pull requests.
+Contributions are welcome! If you'd like to add tutorials, improve content, or report issues:
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/new-tutorial`)
+3. Commit your changes (`git commit -m 'Add new sewing tutorial'`)
+4. Push to the branch (`git push origin feature/new-tutorial`)
+5. Open a Pull Request
 
 ## License
-Add your license information here.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+Have questions or suggestions? Open an issue on GitHub and we'll help you out!
+
+---
+
+**Happy Sewing!** 🧵✨
