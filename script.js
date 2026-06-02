@@ -267,11 +267,6 @@ const tutorials = [
             </ul>
             <h3>Fitting and Adjustments</h3>
             <p>Always do a muslin (test garment) for custom fits. Try on at each major step and mark adjustments before adding sleeves or hems.</p>
-            <h3>Video Tutorial</h3>
-            <p>Watch this helpful video for detailed garment construction techniques:</p>
-            <div class="video-container">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/6AFey2TDCx8" title="Sewing Challenge Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
         `
     }
 ];
