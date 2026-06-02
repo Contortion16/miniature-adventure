@@ -270,7 +270,7 @@ const tutorials = [
             <h3>Video Tutorial</h3>
             <p>Watch this helpful video for detailed garment construction techniques:</p>
             <div class="video-container">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/t3AtMXbzsOo?start=605" title="Garment Construction Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/6AFey2TDCx8" title="Sewing Challenge Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         `
     }
