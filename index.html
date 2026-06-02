@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniature Adventure - Learn to Sew</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🧵 Miniature Adventure</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Miniature Adventure</h1>
+            <p>Your guide to learning how to sew - from basics to advanced techniques</p>
+            <a href="#tutorials" class="cta-button">Start Learning</a>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="tutorials">
+        <div class="container">
+            <h2>Our Tutorials</h2>
+            <div class="skill-selector">
+                <button class="skill-btn active" onclick="filterTutorials('all')">All</button>
+                <button class="skill-btn" onclick="filterTutorials('beginner')">Beginner</button>
+                <button class="skill-btn" onclick="filterTutorials('intermediate')">Intermediate</button>
+                <button class="skill-btn" onclick="filterTutorials('advanced')">Advanced</button>
+            </div>
+
+            <div class="tutorials-grid" id="tutorialsGrid">
+                <!-- Tutorial cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Detail Modal -->
+    <div id="tutorialModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTutorial()">&times;</span>
+            <div id="tutorialDetail"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Miniature Adventure</h2>
+            <p>Miniature Adventure is an interactive website dedicated to teaching people the fundamentals and advanced techniques of sewing. Whether you're a complete beginner or looking to refine your skills, our comprehensive tutorials will guide you through every step of your sewing journey.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have questions or suggestions? We'd love to hear from you!</p>
+            <a href="https://github.com/Contortion16/miniature-adventure" class="contact-link">Open an Issue on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Miniature Adventure. All rights reserved. 🧵✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
