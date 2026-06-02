@@ -1,6 +1,6 @@
 # Stitchs by Alex - Sewing Education Website
 
-Welcome to Stitchs by Alex - Your guide to learning how to sew!
+Welcome to Stitchs by Alexandra - Your guide to learning how to sew!
 
 ## Description
 Stitchs by Alex is an interactive website dedicated to teaching people the fundamentals and advanced techniques of sewing. Whether you're a complete beginner or looking to refine your skills, our comprehensive tutorials will guide you through every step of the sewing journey.
